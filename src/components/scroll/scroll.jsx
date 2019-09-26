@@ -18,7 +18,7 @@ export default (props) => {
             <Switch>
                 <Route path='/about' component={About} />
                 <Route path='/portfolio' component={Portfolio} />
-                <Route path='/commission' component={Commission} />
+                <Route path='/commissions' component={Commission} />
                 <Route path='/contact' component={Contact} />
                 <Route path='/tos' component={ToS} />
                 <Route path='/' component={Landing} />

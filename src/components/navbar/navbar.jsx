@@ -7,7 +7,7 @@ export default (props) => {
         <div className='navbar title-font'>
             <Link to='/about'>About</Link>
             <Link to='/portfolio'>Portfolio</Link>
-            <Link to='/commission'>Commission</Link>
+            <Link to='/commissions'>Commissions</Link>
             <Link to='/contact'>Contact</Link>
             <Link to='/tos'>ToS</Link>
         </div>
