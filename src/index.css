@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.title-font {
+  font-family: 'Bilbo Swash Caps', cursive;
+}
+
+.body-font {
+  font-family: 'Stalemate', cursive;
+}
