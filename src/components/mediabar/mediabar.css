@@ -1,4 +1,5 @@
 .media-container {
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -9,6 +10,7 @@
     align-items: center;
     text-decoration: none;
     color: black;
+    margin: 5px 0;
 }
 
 .media-link:visited {

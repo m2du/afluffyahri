@@ -7,6 +7,7 @@ import Portfolio from '../portfolio/portfolio';
 import Commission from '../commission/commission';
 import Contact from '../contact/contact';
 import ToS from '../tos/tos';
+import MediaBar from '../mediabar/mediabar';
 import './scroll.css';
 
 export default (props) => {
@@ -22,6 +23,7 @@ export default (props) => {
                 <Route path='/tos' component={ToS} />
                 <Route path='/' component={Landing} />
             </Switch>
+            <MediaBar />
         </div>
     )
 }

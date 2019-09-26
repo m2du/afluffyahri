@@ -8,7 +8,7 @@ import './mediabar.css';
 
 export default (props) => {
     return (
-        <div className='media-container'>
+        <div className='media-container body-font'>
             <a href='https://www.twitch.tv/afluffyahri' className='media-link'><img className='media-icon' src={TwitchIcon} alt='twitch.tv' /> /afluffyahri</a><pre>&emsp;&emsp;&emsp;&emsp;</pre>
             <a href='https://twitter.com/AFluffyAhri' className='media-link'><img className='media-icon' src={TwitterIcon} alt='twitter.com' /> @AFluffyAhri</a><pre>&emsp;&emsp;&emsp;&emsp;</pre>
             <a href='https://theforevernub.tumblr.com/' className='media-link'><img className='media-icon' src={TumblrIcon} alt='tumblr.com' /> theforevernub</a><pre>&emsp;&emsp;&emsp;&emsp;</pre>

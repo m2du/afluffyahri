@@ -1,11 +1,6 @@
-.about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .about p {
     font-size: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 .about pre {

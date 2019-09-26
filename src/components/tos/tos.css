@@ -1,0 +1,10 @@
+.tos header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tos-list {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
