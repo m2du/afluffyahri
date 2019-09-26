@@ -11,25 +11,3 @@
 .about pre {
     display: inline;
 }
-
-.media-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.media-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-}
-
-.media-link:visited {
-    color: black;
-}
-
-.media-icon {
-    height: 1.75rem;
-    margin-right: 5px;
-}
