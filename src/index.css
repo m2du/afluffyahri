@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #2A1D15;
 }
 
 code {
@@ -14,8 +15,10 @@ code {
 
 .title-font {
   font-family: 'Bilbo Swash Caps', cursive;
+  font-weight: 600;
 }
 
 .body-font {
-  font-family: 'Stalemate', cursive;
+  /* font-family: 'Stalemate', cursive; */
+  font-family: 'Architects Daughter', cursive;
 }

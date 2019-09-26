@@ -7,11 +7,12 @@ import Portfolio from '../portfolio/portfolio';
 import Commission from '../commission/commission';
 import Contact from '../contact/contact';
 import ToS from '../tos/tos';
+import './scroll.css';
 
 export default (props) => {
     return (
-        <div>
-            <Link className='title-font' to='/'>A Fluffy Ahri</Link>
+        <div className='scroll'>
+            <Link className='site-header title-font' to='/'>A Fluffy Ahri</Link>
             <Navbar />
             <Switch>
                 <Route path='/about' component={About} />
