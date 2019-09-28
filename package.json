@@ -2,7 +2,7 @@
   "name": "afluffyahri",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://m2du.github.io/afluffyahri/",
+  "homepage": "https://afluffyahri.netlify.com/",
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
