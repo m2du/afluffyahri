@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/afluffyahri/static/css/main.fd3baa87.chunk.css",
+    "main.css": "/afluffyahri/static/css/main.2fcd1361.chunk.css",
     "main.js": "/afluffyahri/static/js/main.afa9dd07.chunk.js",
     "main.js.map": "/afluffyahri/static/js/main.afa9dd07.chunk.js.map",
     "runtime-main.js": "/afluffyahri/static/js/runtime-main.90aa1a0c.js",
@@ -8,9 +8,9 @@
     "static/js/2.00793e02.chunk.js": "/afluffyahri/static/js/2.00793e02.chunk.js",
     "static/js/2.00793e02.chunk.js.map": "/afluffyahri/static/js/2.00793e02.chunk.js.map",
     "index.html": "/afluffyahri/index.html",
-    "precache-manifest.8684959933ec07b8a02eff7ee1f9caa1.js": "/afluffyahri/precache-manifest.8684959933ec07b8a02eff7ee1f9caa1.js",
+    "precache-manifest.a9a938416ce5fe43dd097904b44a46b1.js": "/afluffyahri/precache-manifest.a9a938416ce5fe43dd097904b44a46b1.js",
     "service-worker.js": "/afluffyahri/service-worker.js",
-    "static/css/main.fd3baa87.chunk.css.map": "/afluffyahri/static/css/main.fd3baa87.chunk.css.map",
+    "static/css/main.2fcd1361.chunk.css.map": "/afluffyahri/static/css/main.2fcd1361.chunk.css.map",
     "static/media/Banner.png": "/afluffyahri/static/media/Banner.428f4e43.png",
     "static/media/scroll.png": "/afluffyahri/static/media/scroll.9ce152c5.png",
     "static/media/streamlabs_icon.png": "/afluffyahri/static/media/streamlabs_icon.d0351306.png"
