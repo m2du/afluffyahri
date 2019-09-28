@@ -25,8 +25,7 @@ pre {
 }
 
 .body-font {
-  /* font-family: 'Stalemate', cursive; */
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Niconne', cursive;
 }
 
 .page {
@@ -42,4 +41,14 @@ pre {
 
 .small {
   font-size: 1.25rem;
+}
+
+.disable-scrollbars::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+}
+
+.disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
 }
