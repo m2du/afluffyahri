@@ -53,3 +53,7 @@ pre {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* IE 10+ */
 }
+
+.text-hover-shadow:hover {
+  text-shadow: #86390c 1px 1px 5px;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch, Link, withRouter } from 'react-router-dom';
 import Navbar from '../navbar/navbar';
-import Landing from '../landing/landing';
+// import Landing from '../landing/landing';
 import About from '../about/about';
 import Portfolio from '../portfolio/portfolio';
 import Commission from '../commission/commission';
@@ -24,7 +24,7 @@ const Scroll = (props) => {
         <div className='scroll' style={backgroundStyle}>
             <div className='scroll-content disable-scrollbars'>
                 <Link className='coat-of-arms' to='/'>
-                    <img src={CoatOfArms}></img>
+                    <img src={CoatOfArms} alt=''></img>
                 </Link>
                 <Navbar />
                 <Switch>

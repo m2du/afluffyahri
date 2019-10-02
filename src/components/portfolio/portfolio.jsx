@@ -17,17 +17,17 @@ export default (props) => {
         <div className='portfolio page body-font'>
             <header className='page-header title-font'>Portfolio</header>
             <div className='portfolio-content'>
-                <img className='portfolio-item' src={LightAhri} />
-                <img className='portfolio-item' src={Aaravos} />
-                <img className='portfolio-item' src={AcademyAhri} />
-                <img className='portfolio-item' src={FortniteHeroes} />
-                <img className='portfolio-item' src={KyraToto} />
-                <img className='portfolio-item' src={KyraSword} />
-                <img className='portfolio-item' src={Kyra} />
-                <img className='portfolio-item' src={Pokemaster} />
-                <img className='portfolio-item' src={Versa} />
-                <img className='portfolio-item' src={Kage2} />
-                <img className='portfolio-item' src={Hsenna4} />
+                <img className='portfolio-item' src={LightAhri} alt='' />
+                <img className='portfolio-item' src={Aaravos} alt='' />
+                <img className='portfolio-item' src={AcademyAhri} alt='' />
+                <img className='portfolio-item' src={FortniteHeroes} alt='' />
+                <img className='portfolio-item' src={KyraToto} alt='' />
+                <img className='portfolio-item' src={KyraSword} alt='' />
+                <img className='portfolio-item' src={Kyra} alt='' />
+                <img className='portfolio-item' src={Pokemaster} alt='' />
+                <img className='portfolio-item' src={Versa} alt='' />
+                <img className='portfolio-item' src={Kage2} alt='' />
+                <img className='portfolio-item' src={Hsenna4} alt='' />
             </div>
         </div>
     )

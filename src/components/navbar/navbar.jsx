@@ -11,11 +11,11 @@ export default (props) => {
 
     return (
         <div className='navbar title-font' style={bannerStyle}>
-            <Link className='about-link' to='/about'>About</Link>
-            <Link className='portfolio-link' to='/portfolio'>Portfolio</Link>
-            <Link className='commissions-link' to='/commissions'>Commissions</Link>
-            <Link className='contact-link' to='/contact'>Contact</Link>
-            <Link className='tos-link' to='/tos'>ToS</Link>
+            <Link className='about-link text-hover-shadow' to='/about'>About</Link>
+            <Link className='portfolio-link text-hover-shadow' to='/portfolio'>Portfolio</Link>
+            <Link className='commissions-link text-hover-shadow' to='/commissions'>Commissions</Link>
+            <Link className='contact-link text-hover-shadow' to='/contact'>Contact</Link>
+            <Link className='tos-link text-hover-shadow' to='/tos'>ToS</Link>
         </div>
     )
 }

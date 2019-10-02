@@ -1,0 +1,60 @@
+.commission-content {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.commission-content > .commission-type {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.commission-content > .instructions {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.select-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4%;
+}
+
+.select-container > .option {
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.pricing-header {
+    width: 100%;
+    font-size: 1.75rem;
+    /* font-weight: 600; */
+    margin-left: 35%;
+    margin-bottom: 2%;
+}
+
+.pricing-list {
+    width: 100%;
+    margin-left: 35%;
+    padding-left: 10%;
+    margin-bottom: 4%;
+}
+
+.pricing-list > li {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.commission-content > img {
+    width: 80%;
+}
