@@ -13,12 +13,11 @@
 
 .navbar a {
     position: relative;
-    color: black;
     text-decoration: none;
 }
 
 .navbar a:visited {
-    color: black;
+    color: #421d07;
 }
 
 .about-link {

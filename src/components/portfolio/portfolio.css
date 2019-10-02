@@ -1,0 +1,10 @@
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.portfolio-item {
+    max-height: 250px;
+}

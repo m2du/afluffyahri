@@ -5,7 +5,7 @@ import './about.css';
 export default (props) => {
     return (
         <div className='about page body-font'>
-            <header className='page-header title-font'>About</header>
+            <header className='page-header title-font'>A Fluffy Ahri</header>
             <p>
                 Hello! I am Ahri or A Fluffy Ahri. I am an Artist and Streamer. 
                 I have been drawing ever since I was able to hold a pencil. I have a major in Illustration, comic books. 
