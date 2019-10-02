@@ -9,13 +9,16 @@
     flex-direction: column;
 }
 
-.site-header {
-    display: block;
-    font-size: 3rem;
-    text-decoration: none;
-    margin-top: 9.5%;
-    margin-bottom: 5.5%;
+.coat-of-arms {
     text-align: center;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+.coat-of-arms > img {
+    height: 100%;
 }
 
 .site-header:visited {
@@ -23,6 +26,7 @@
 }
 
 .scroll-content {
+    margin-top: 19%;
     margin-left: 10.5%;
     margin-right: 11%;
     overflow: scroll;

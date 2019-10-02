@@ -1,0 +1,8 @@
+.splash-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.landing-bg {
+    width: 100%;
+}

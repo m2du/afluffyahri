@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch, Link, withRouter } from 'react-router-dom';
 import Navbar from '../navbar/navbar';
 import Landing from '../landing/landing';
 import About from '../about/about';
@@ -7,20 +7,25 @@ import Portfolio from '../portfolio/portfolio';
 import Commission from '../commission/commission';
 import Contact from '../contact/contact';
 import ToS from '../tos/tos';
-import MediaBar from '../mediabar/mediabar';
+// import MediaBar from '../mediabar/mediabar';
 import ScrollBg from './scroll.png';
+import SplashScroll from './splash_scroll.png';
+import CoatOfArms from './coat_of_arms.png';
 import './scroll.css';
 
-export default (props) => {
+const Scroll = (props) => {
+    const image = props.location.pathname === '/' ? SplashScroll : ScrollBg;
     const backgroundStyle = {
-        backgroundImage: `url(${ScrollBg})`,
+        backgroundImage: `url(${image})`,
         backgroundSize: 'auto 100%'
     };
 
     return (
         <div className='scroll' style={backgroundStyle}>
-            <Link className='site-header title-font' to='/'>A Fluffy Ahri</Link>
             <div className='scroll-content disable-scrollbars'>
+                <Link className='coat-of-arms' to='/'>
+                    <img src={CoatOfArms}></img>
+                </Link>
                 <Navbar />
                 <Switch>
                     <Route path='/about' component={About} />
@@ -28,7 +33,6 @@ export default (props) => {
                     <Route path='/commissions' component={Commission} />
                     <Route path='/contact' component={Contact} />
                     <Route path='/tos' component={ToS} />
-                    <Route path='/' component={Landing} />
                 </Switch>
             </div>
             {/* <MediaBar /> */}
@@ -36,3 +40,5 @@ export default (props) => {
         </div>
     )
 }
+
+export default withRouter(Scroll);
