@@ -62,7 +62,7 @@ export default (props) => {
             <div className='commission-content'>
                 <div className='instructions'>
                     <p>DM on Discord or email for orders.</p>
-                    <p>๖ۣۜζ͜͡𝐀hri#9097 | afluffyahri@gmail.com</p>
+                    <p>Ahri#9097 | afluffyahri@gmail.com</p>
                     <p>Accepting Paypal. Payment must be received in order to begin their drawing.</p>
                     <p>Please read <Link to='/tos'>ToS</Link> before submitting.</p>
                 </div>
