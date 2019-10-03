@@ -15,6 +15,11 @@ export default (props) => {
     const descRef = useRef(null);
 
     const validateForm = () => {
+        fNameRef.current.classList.remove('invalid');
+        lNameRef.current.classList.remove('invalid');
+        emailRef.current.classList.remove('invalid');
+        descRef.current.classList.remove('invalid');
+
         let valid = true;
 
         if (fNameRef.current.value === '') {
