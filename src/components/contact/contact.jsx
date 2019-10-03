@@ -18,6 +18,7 @@ export default (props) => {
     const tNameRef = useRef(null);
     const emailRef = useRef(null);
     const descRef = useRef(null);
+    const formBtnRef = useRef(null);
 
     const validateForm = () => {
         fNameRef.current.classList.remove('invalid');
@@ -52,6 +53,7 @@ export default (props) => {
 
     const handleSubmit = e => {
         e.preventDefault();
+        formBtnRef.current.disabled = true;
 
         if (validateForm()) {
             axios.post(`https://cors-anywhere.herokuapp.com/${formAction}`,
@@ -72,7 +74,7 @@ export default (props) => {
 
 
     const contactForm = (
-        <form className='contact-form' onSubmit={handleSubmit} method='POST'>
+        <form className='contact-form' onSubmit={handleSubmit} method='POST' data-netlify-recaptcha="true" data-netlify="true">
             <label>Name <span className='red-text'>*</span></label>
             <div className='name-input-container'>
                 <input className='first-name-input body-font' ref={fNameRef} type="text" name='first name' placeholder='first name' value={firstName} onChange={e => setFirstName(e.target.value)} />
@@ -84,7 +86,7 @@ export default (props) => {
             <input className='body-font' ref={emailRef} type="email" name='email' placeholder='your email' value={email} onChange={e => setEmail(e.target.value)} />
             <label>Description <span className='red-text'>*</span></label>
             <textarea className='body-font' ref={descRef} cols="30" rows="8" name='description' value={desc} onChange={e => setDesc(e.target.value)}></textarea>
-            <button className='body-font'>Submit</button>
+            <button className='body-font' ref={formBtnRef}>Submit</button>
         </form>
     );
 
