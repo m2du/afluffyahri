@@ -6,7 +6,7 @@ import SamplePanels from './images/panels.png';
 import './commission.css';
 
 export default (props) => {
-    const [ category, setCategory ] = useState('badges');
+    const [ category, setCategory ] = useState('emotes');
     
     let pricingText;
     let sampleImage;
@@ -68,8 +68,8 @@ export default (props) => {
                 </div>
                 <div className='commission-type'>Twitch Art</div>
                 <div className='select-container'>
-                    <div className='option text-hover-shadow' onClick={ e => selectOption(e, 'badges')}>Badges</div>
                     <div className='option text-hover-shadow' onClick={ e => selectOption(e, 'emotes')}>Emotes</div>
+                    <div className='option text-hover-shadow' onClick={ e => selectOption(e, 'badges')}>Badges</div>
                     <div className='option text-hover-shadow' onClick={ e => selectOption(e, 'panels')}>Panels</div>
                 </div>
                 {pricingText}
