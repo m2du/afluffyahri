@@ -75,3 +75,9 @@
 .contact-form textarea.invalid {
     border-color: rgb(190, 0, 0);
 }
+
+.submit-message {
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
