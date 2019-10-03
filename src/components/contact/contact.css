@@ -67,3 +67,11 @@
     background: #6d3312;
     color: tan;
 }
+
+.contact-form input.invalid {
+    border-color: rgb(190, 0, 0);
+}
+
+.contact-form textarea.invalid {
+    border-color: rgb(190, 0, 0);
+}

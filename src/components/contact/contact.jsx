@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './contact.css';
 
 export default (props) => {
@@ -8,6 +8,47 @@ export default (props) => {
     const [ email, setEmail ] = useState('');
     const [ desc, setDesc ] = useState('');
 
+    const fNameRef = useRef(null);
+    const lNameRef = useRef(null);
+    const tNameRef = useRef(null);
+    const emailRef = useRef(null);
+    const descRef = useRef(null);
+
+    const validateForm = () => {
+        let valid = true;
+
+        if (fNameRef.current.value === '') {
+            valid = false;
+            fNameRef.current.classList.add('invalid');
+        }
+
+        if (lNameRef.current.value === '') {
+            valid = false;
+            lNameRef.current.classList.add('invalid');
+        }
+
+        if (emailRef.current.value === '') {
+            valid = false;
+            emailRef.current.classList.add('invalid');
+        }
+
+        if (descRef.current.value === '') {
+            valid = false;
+            descRef.current.classList.add('invalid');
+        }
+
+        return valid;
+    }
+
+    const handleSubmit = e => {
+        e.preventDefault();
+
+        if (validateForm()) {
+            // send email
+        }
+    }
+
+
     return (
         <div className='contact page body-font'>
             <header className='page-header title-font'>Contact</header>
@@ -16,18 +57,18 @@ export default (props) => {
                 <p>discord - Ahri#9097</p>
                 <p>twitch.tv/afluffyahri</p>
             </div>
-            <form className='contact-form' onSubmit={e => e.preventDefault()}>
+            <form className='contact-form' onSubmit={handleSubmit}>
                 <label>Name <span className='red-text'>*</span></label>
                 <div className='name-input-container'>
-                    <input className='first-name-input body-font' type="text" placeholder='first name' value={firstName} onChange={e => setFirstName(e.target.value)}/>
-                    <input className='last-name-input body-font' type="text" placeholder='last name' value={lastName} onChange={e => setLastName(e.target.value)}/>
+                    <input className='first-name-input body-font' ref={fNameRef} type="text" placeholder='first name' value={firstName} onChange={e => setFirstName(e.target.value)}/>
+                    <input className='last-name-input body-font' ref={lNameRef} type="text" placeholder='last name' value={lastName} onChange={e => setLastName(e.target.value)}/>
                 </div>
                 <label>Twitch</label>
-                <input className='body-font' type="text" placeholder='twitch name' value={twitchName} onChange={e => setTwitchName(e.target.value)} />
+                <input className='body-font' ref={tNameRef} type="text" placeholder='twitch name' value={twitchName} onChange={e => setTwitchName(e.target.value)} />
                 <label>Email <span className='red-text'>*</span></label>
-                <input className='body-font' type="email" placeholder='your email' value={email} onChange={e => setEmail(e.target.value)} />
+                <input className='body-font' ref={emailRef} type="email" placeholder='your email' value={email} onChange={e => setEmail(e.target.value)} />
                 <label>Description <span className='red-text'>*</span></label>
-                <textarea className='body-font' cols="30" rows="8" onChange={e => setDesc(e.target.value)}>{desc}</textarea>
+                <textarea className='body-font' ref={descRef} cols="30" rows="8" value={desc} onChange={e => setDesc(e.target.value)}></textarea>
                 <button className='body-font'>Submit</button>
             </form>
         </div>
