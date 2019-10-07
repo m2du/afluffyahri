@@ -1,13 +1,11 @@
 import React from 'react';
 import { Route, Switch, Link, withRouter } from 'react-router-dom';
 import Navbar from '../navbar/navbar';
-// import Landing from '../landing/landing';
 import About from '../about/about';
 import Portfolio from '../portfolio/portfolio';
 import Commission from '../commission/commission';
 import Contact from '../contact/contact';
 import ToS from '../tos/tos';
-// import MediaBar from '../mediabar/mediabar';
 import ScrollBg from './scroll.png';
 import SplashScroll from './splash_scroll.png';
 import CoatOfArms from './coat_of_arms.png';
@@ -35,7 +33,6 @@ const Scroll = (props) => {
                     <Route path='/tos' component={ToS} />
                 </Switch>
             </div>
-            {/* <MediaBar /> */}
             <div className='scroll-bottom'></div>
         </div>
     )

@@ -74,18 +74,58 @@ export default (props) => {
 
 
     const contactForm = (
-        <form className='contact-form' onSubmit={handleSubmit} method='POST' data-netlify-recaptcha="true" data-netlify="true">
+        <form className='contact-form' onSubmit={handleSubmit} method='POST' autoComplete="off">
             <label>Name <span className='red-text'>*</span></label>
             <div className='name-input-container'>
-                <input className='first-name-input body-font' ref={fNameRef} type="text" name='first name' placeholder='first name' value={firstName} onChange={e => setFirstName(e.target.value)} />
-                <input className='last-name-input body-font' ref={lNameRef} type="text" name='last name' placeholder='last name' value={lastName} onChange={e => setLastName(e.target.value)} />
+                <input className='first-name-input body-font' 
+                    ref={fNameRef} type="text" 
+                    name='first name' 
+                    placeholder='first name' 
+                    value={firstName} 
+                    onChange={e => setFirstName(e.target.value)}
+                    autoComplete="off"
+                />
+                <input className='last-name-input body-font' 
+                    ref={lNameRef} type="text" 
+                    name='last name' 
+                    placeholder='last name' 
+                    value={lastName} 
+                    onChange={e => setLastName(e.target.value)}
+                    autoComplete='off'
+                />
             </div>
+
             <label>Twitch</label>
-            <input className='body-font' ref={tNameRef} type="text" name='twitch name' placeholder='twitch name' value={twitchName} onChange={e => setTwitchName(e.target.value)} />
+            <input className='body-font' 
+                ref={tNameRef} type="text" 
+                name='twitch name' 
+                placeholder='twitch name' 
+                value={twitchName} 
+                onChange={e => setTwitchName(e.target.value)}
+                autoComplete='off'
+            />
+
             <label>Email <span className='red-text'>*</span></label>
-            <input className='body-font' ref={emailRef} type="email" name='email' placeholder='your email' value={email} onChange={e => setEmail(e.target.value)} />
+            <input className='body-font' 
+                ref={emailRef} 
+                type="email" 
+                name='email' 
+                placeholder='your email' 
+                value={email} 
+                onChange={e => setEmail(e.target.value)}
+                autoComplete='off'
+            />
+
             <label>Description <span className='red-text'>*</span></label>
-            <textarea className='body-font' ref={descRef} cols="30" rows="8" name='description' value={desc} onChange={e => setDesc(e.target.value)}></textarea>
+            <textarea className='body-font' 
+                ref={descRef} cols="30" rows="8" 
+                name='description' 
+                placeholder='description...' 
+                value={desc} 
+                onChange={e => setDesc(e.target.value)}
+                autoComplete='off'
+            ></textarea>
+
             <button className='body-font' ref={formBtnRef}>Submit</button>
         </form>
     );
